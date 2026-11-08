@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 · 튼튼 업무수첩</title>
+<meta name="description" content="튼튼 업무수첩 폰 앱의 개인정보처리방침">
+<meta name="theme-color" content="#37474F">
+<link rel="icon" href="icon-192.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<main class="doc">
+
+  <p class="back"><a href="./">← 튼튼 업무수첩</a></p>
+
+  <h1>개인정보처리방침</h1>
+  <p class="lead">튼튼 업무수첩 폰 앱(이하 “앱”)이 어떤 정보를 다루는지 적어 둡니다.</p>
+
+  <h2>한 줄 요약</h2>
+  <div class="box">
+    <p><strong>저희 서버에는 아무것도 저장되지 않습니다.</strong> 앱은 화면만 내려받고,
+      업무수첩 내용은 이용자의 기기와 이용자 본인의 Google 계정 사이에서만 오갑니다.</p>
+  </div>
+
+  <h2>1. 수집하는 정보</h2>
+  <p><strong>셀앤로우는 이용자의 어떤 정보도 수집하거나 저장하지 않습니다.</strong>
+    앱은 정적인 웹 페이지이며, 이용자의 업무수첩 내용·계정 정보·이용 기록을
+    셀앤로우의 서버로 전송하지 않습니다. 접속 분석 도구나 광고 추적 도구를
+    쓰지 않으며, 추적 목적의 쿠키를 심지 않습니다.</p>
+
+  <h2>2. Google 계정 접근 범위</h2>
+  <p>앱은 Google 로그인을 통해 다음 하나의 권한만 요청합니다.</p>
+  <p class="scope"><code>https://www.googleapis.com/auth/drive.file</code></p>
+  <p>이 권한은 <strong>이용자가 파일 선택창에서 직접 고른 파일에 대해서만</strong>
+    읽기와 쓰기를 허용합니다. 이용자의 Google Drive에 있는 다른 파일은 앱에
+    보이지 않으며, 접근할 수도 없습니다.</p>
+  <p>앱이 그 파일에 하는 일은 두 가지입니다.</p>
+  <ul>
+    <li>업무수첩 시트의 내용을 <strong>읽어</strong> 화면에 보여주기</li>
+    <li>이용자가 입력한 할 일 · 접수 · 일정 · 메모 · 회의록 · 루틴 체크를 그 시트에 <strong>쓰기</strong></li>
+  </ul>
+
+  <h2>3. 기기에 저장되는 것</h2>
+  <p>아래 두 가지가 이용자의 브라우저 저장소(localStorage)에만 보관됩니다.
+    셀앤로우로 전송되지 않습니다.</p>
+  <ul>
+    <li><strong>고른 파일의 식별자</strong> — 다시 열 때 파일을 매번 고르지 않게 하기 위해</li>
+    <li><strong>Google 접근 토큰</strong> — 약 한 시간 뒤 만료됩니다</li>
+    <li><strong>Google 갱신 토큰</strong> — 매번 로그인하지 않게 하기 위해.
+      이용자가 접근 권한을 철회할 때까지 유지됩니다 (아래 7항)</li>
+  </ul>
+
+  <h2>4. 토큰 교환 기능</h2>
+  <p>매번 로그인하지 않아도 되도록, 앱은 Google이 발급한 코드를 토큰으로
+    바꾸는 작은 기능 하나를 호스팅 서비스에서 실행합니다.</p>
+  <p>이 기능은 <strong>받은 값을 Google에 그대로 전달하고 Google의 응답을
+    그대로 돌려줄 뿐이며, 어떤 값도 저장하거나 기록하지 않습니다.</strong>
+    데이터베이스가 없습니다. <strong>업무수첩 내용은 이 기능을 지나가지
+    않습니다.</strong></p>
+
+  <h2>5. 제3자 제공</h2>
+  <p>제공하지 않습니다. 앱이 통신하는 곳은 Google(로그인·Drive·Sheets)과,
+    앱 화면 파일을 내려주는 호스팅 서비스뿐입니다.</p>
+
+  <h2>6. 보관 기간</h2>
+  <p>셀앤로우가 보관하는 이용자 정보가 없으므로 보관 기간도 없습니다.
+    기기에 저장된 항목은 아래 방법으로 바로 지울 수 있습니다.</p>
+
+  <h2>7. 이용자가 직접 할 수 있는 일</h2>
+  <ul>
+    <li><strong>연결한 파일 바꾸기 · 끊기</strong> — 앱의 더보기 화면
+      <em>다른 파일로 바꾸기</em></li>
+    <li><strong>기기에 저장된 것 지우기</strong> — 브라우저의 사이트 데이터 삭제</li>
+    <li><strong>앱의 접근 권한 철회</strong> — Google 계정 설정의
+      <em>보안 › 서드파티 앱 및 서비스</em> 에서 언제든 해제</li>
+  </ul>
+
+  <h2>8. 아동의 개인정보</h2>
+  <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 정보를 따로 수집하지 않습니다.</p>
+
+  <h2>9. 변경</h2>
+  <p>내용이 바뀌면 이 페이지를 고치고 아래 날짜를 갱신합니다.</p>
+
+  <h2>10. 문의</h2>
+  <p>셀앤로우 (CELL&amp;ROW)<br>
+    <a href="mailto:cellnrow@gmail.com">cellnrow@gmail.com</a></p>
+
+  <p class="date">시행일 : 2026년 11월 8일</p>
+
+</main>
+</body>
+</html>

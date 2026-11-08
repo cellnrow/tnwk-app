@@ -1,0 +1,89 @@
+/* 개인정보처리방침 · 서비스 약관 같은 읽는 문서용 */
+
+:root {
+  --ground: #F5F7FA;
+  --card: #FFFFFF;
+  --ink: #1A202C;
+  --muted: #64707F;
+  --line: #E2E6EC;
+  --brand: #37474F;
+  --note-bg: #ECEFF1;
+  --note-line: #CFD8DC;
+  --note-ink: #37474F;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+}
+
+.doc {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 28px 16px 72px;
+}
+
+.back { margin: 0 0 22px; font-size: 13px; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a:hover { color: var(--brand); text-decoration: underline; }
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.lead { margin: 0 0 28px; color: var(--muted); font-size: 14px; }
+
+h2 {
+  margin: 34px 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+h2:first-of-type { border-top: 0; padding-top: 0; }
+
+p { margin: 0 0 12px; }
+
+ul { margin: 0 0 12px; padding-left: 20px; }
+li { margin-bottom: 7px; }
+
+a { color: var(--brand); }
+a:hover { color: #263238; }
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 2px 6px;
+  word-break: break-all;
+}
+.scope { margin-bottom: 14px; }
+
+.box {
+  background: var(--note-bg);
+  border: 1px solid var(--note-line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  color: var(--note-ink);
+}
+.box p { margin: 0; }
+
+.date {
+  margin-top: 36px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
