@@ -18,15 +18,15 @@
 
 'use strict';
 
-/* ── 구글 클라우드 설정 (업무수첩 프로젝트) ──────────────────────
- *  새 프로젝트를 만든 뒤 아래 세 값을 채웁니다. (올리는_방법.md 2번)
+/* ── 구글 클라우드 설정 (업무수첩 프로젝트, 번호 715373148180) ──────
+ *  2026-11-08 채움. 프로젝트를 바꾸면 아래 세 값과 api/token.js 를 같이 고칩니다.
  *  이 값들은 앱 코드에 그대로 들어가는 공개 값입니다. 가릴 필요가
  *  없습니다. 클라이언트 보안 비밀번호는 여기에 넣지 않습니다.
  * ---------------------------------------------------------------- */
 const CFG = {
-  clientId: '여기에_클라이언트_ID.apps.googleusercontent.com',
-  apiKey:   '여기에_API_키',
-  appId:    '여기에_프로젝트_번호',
+  clientId: '715373148180-4bcvt3r8j5q4b4pqafmo9jkc8jsmogk7.apps.googleusercontent.com',
+  apiKey:   'AIzaSyDIERQueZ3mVDWwS3Q6A9VyTL83NtydVqM',
+  appId:    '715373148180',
   scope:    'https://www.googleapis.com/auth/drive.file'
 };
 

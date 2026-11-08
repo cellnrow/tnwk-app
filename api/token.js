@@ -15,7 +15,7 @@
  * ================================================================ */
 
 // ★ app.js 맨 위 CFG.clientId 와 같은 값을 넣습니다 (업무수첩 새 프로젝트의 클라이언트 ID)
-const CLIENT_ID = '여기에_클라이언트_ID.apps.googleusercontent.com';
+const CLIENT_ID = '715373148180-4bcvt3r8j5q4b4pqafmo9jkc8jsmogk7.apps.googleusercontent.com';
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
 
 export default async function handler(req, res) {
